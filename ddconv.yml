@@ -18,13 +18,13 @@ titles:
 # 作成者等
 creators:
   # 作成者1 --------
-  - content: kromiii # 著者などの名前を指定します。
+  - content: ヒロユキ # 著者などの名前を指定します。
 
 # 出版物が使用する言語（必須）
 language: ja #日本語=ja、英語=enなど
 
 # 出版年月日
-#date: 20130214 # YYYYMMDDの形式で指定します。
+date: 20240214 # YYYYMMDDの形式で指定します。
 
 # ページ送り方向
 pageDirection: rtl # 横書き=ltr、縦書き=rtl
