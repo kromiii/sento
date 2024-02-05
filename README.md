@@ -22,7 +22,7 @@ python concat.py
 
 ```
 python ai_reviewer.py "3-1.md"
-``
+```
 
 以下のようにワイルドカードを指定して複数のファイルを一括で校正することができます。
 
