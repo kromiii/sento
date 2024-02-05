@@ -7,9 +7,9 @@
 ddconvVersion: 1.0 # 必須。この行は編集しないでください。
 
 # 出版物の識別子
-#identifiers:
-#  - content: d0df4f65-822d-4714-bd24-c53306fe065c # 具体的な識別子を指定します。
-#    identifier-type: uuid # 「uuid」または「isbn」を指定します。
+identifiers:
+ - content: 6e24e3e9-177a-43f0-ab02-c84fb568b6cb # 具体的な識別子を指定します。
+   identifier-type: uuid # 「uuid」または「isbn」を指定します。
 
 # タイトル
 titles:
