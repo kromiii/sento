@@ -15,5 +15,5 @@ if __name__ == '__main__':
             content += file.read() + '\n\n'
 
     # 結果をoutput.mdに書き出す
-    with open('output.md', 'w') as output_file:
+    with open('assets/output.md', 'w') as output_file:
         output_file.write(content)
