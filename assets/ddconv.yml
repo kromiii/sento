@@ -1,0 +1,44 @@
+# ddconv.yml
+# YAMLで記述されたDDconvの設定ファイルです。
+# 「#」以降のテキストは無視されます。
+# -------------------------------------
+
+# バージョン
+ddconvVersion: 1.0 # 必須。この行は編集しないでください。
+
+# 出版物の識別子
+identifiers:
+ - content: 6e24e3e9-177a-43f0-ab02-c84fb568b6cb # 具体的な識別子を指定します。
+   identifier-type: uuid # 「uuid」または「isbn」を指定します。
+
+# タイトル
+titles:
+  - content: 京都銭湯巡り # タイトルを指定します。（必須）
+
+# 作成者等
+creators:
+  # 作成者1 --------
+  - content: ヒロユキ # 著者などの名前を指定します。
+
+# 出版物が使用する言語（必須）
+language: ja #日本語=ja、英語=enなど
+
+# 出版年月日
+date: 20240214 # YYYYMMDDの形式で指定します。
+
+# ページ送り方向
+pageDirection: ltr # 横書き=ltr、縦書き=rtl
+
+# EPUB出力オプション
+# true: 有効、false: 無効
+options:
+  skipCover: false  # 表紙ページをスキップする true|false
+  titlepage: true # 扉ページを自動生成する true|false
+  tocInSpine: true # 目次ページを自動生成する true|false
+  tocDisplayDepth: 6 # 目次ページに表示する目次の階層を指定する 1-6
+  displayLandmarksNav: false # 目次ページにランドマークを表示する true|false
+  displayLoiNav: false # 目次ページに図版一覧を表示する
+  displayLotNav: false # 目次ページに表一覧を表示する true|false
+  kepub: false # kobo Touch向け拡張子「.kepub.epub」を利用する true|false
+  autoTcy: true # 自動縦中横を有効にする true|false
+  tcyDigit: 3 #　自動縦中横にする半角数字の桁数を指定する 2-n
