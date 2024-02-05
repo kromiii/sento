@@ -6,6 +6,16 @@
 
 設定は `ddconv.yml` に記述します。
 
+個別の内容は `posts/` 以下にMarkdownファイルとして保存します。
+
+でんでんコンバータに渡す用のファイルは
+
+```
+python concat.py
+```
+
+で生成します。
+
 ## AIによる校正
 
 環境変数 `OPENAI_API_KEY` にOpenAIのAPIキーを設定することでAIによる校正を行うことができます。
