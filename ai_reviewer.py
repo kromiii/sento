@@ -1,4 +1,5 @@
 import os
+import glob
 import sys
 from openai import OpenAI
 
@@ -26,12 +27,20 @@ def main(input_text):
     return response.choices[0].message.content
 
 if __name__ == "__main__":
-    # 引数でファイルパスを指定する
-    fp = sys.argv[1]
-    with open(fp, 'r') as file:
-        input_text = file.read()
-    result = main(input_text)
-    # 結果をファイルに書き込む
-    with open(fp, 'w') as file:
-        file.write(result)
+    # 引数でワイルドカードを含むパスを指定する
+    wildcard_path = sys.argv[1]
+    # ワイルドカードを含むパスにマッチするファイルを取得する
+    print(glob.glob(wildcard_path))
+    for fp in glob.glob(wildcard_path):
+        print(f'AIレビューを開始します: {fp}') 
+        with open(fp, 'r') as file:
+            input_text = file.read()
+        print(f'文字数: {len(input_text)}')
+        # AIレビューを実行する
+        print('AIレビューを実行中...')
+        result = main(input_text)
+        # 結果をファイルに書き込む
+        with open(fp, 'w') as file:
+            file.write(result)
+        print(f'AIレビューが完了しました: {fp}')
     print('AIレビューが完了しました。')
