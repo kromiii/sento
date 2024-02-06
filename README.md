@@ -1,5 +1,19 @@
 # 京都銭湯巡り
 
+## フォルダ構成
+
+```
+.
+├── ai_reviewer.py // AIによる校正を行うスクリプト
+├── assets
+│   |── output.md  // 組本の出力先
+|   |── cover.jpg  // 表紙画像
+|   └── ddconv.yml // 組本の設定ファイル
+├── concat.oy      // 組本を作成するスクリプト
+├── posts          // 組本の個別の内容を保存するディレクトリ
+└── README.md
+```
+
 ## 組本
 
 [でんでんコンバータ](https://conv.denshochan.com/)を使って、組本を作成します。
