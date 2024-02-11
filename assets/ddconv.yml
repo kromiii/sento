@@ -18,7 +18,7 @@ titles:
 # 作成者等
 creators:
   # 作成者1 --------
-  - content: ヒロユキ # 著者などの名前を指定します。
+  - content: kromiii # 著者などの名前を指定します。
 
 # 出版物が使用する言語（必須）
 language: ja #日本語=ja、英語=enなど
